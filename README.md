@@ -10,3 +10,22 @@ survivor. As a software engineer, if you were to compute this place where Joseph
 should stand, given the group size of N and step on M, how would you do it?
 
 
+## Solution : Josephus will chose or will stand in  the 31 st position inorder for him to be the survivor.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
