@@ -1,0 +1,35 @@
+import java.io.*;
+
+class test {
+
+static int (int N, int M)    //  N : Group size
+                                 M : Step size
+{
+
+if (N == 1)
+	return 1;
+
+else
+	
+	return (j(N - 1, M) + M-1) % N + 1;  // If the position returned by j(N-1,M) is considered , then it will consider the 
+
+                                                position return by k %n as position 1.
+
+                                                So the value of N and M are altered.
+
+}
+
+
+public static void main(String[] args)
+{
+
+int N = 41;
+
+int M = 3;
+
+System.out.println("The chosen place is " + j(N, M));
+
+}
+}
+
+
