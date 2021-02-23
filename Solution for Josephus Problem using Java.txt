@@ -2,35 +2,35 @@ import java.io.*;
 
 class test {
 
-static int (int N, int M)    //  N : Group size
-                                 M : Step size
+static int j(int N, int M)
+
 {
-
 if (N == 1)
+
 	return 1;
-
+	
+// If the position returned by j(N-1,M) is considered , then it will consider the  position return by k %n as position 1.
+ So instead of j(N-1,M)% N we are considering (j(N - 1, M) + M-1) % N + 1
+ ie; the value of N and M are altered.
+	
 else
-
-
-	return (j(N - 1, M) + M-1) % N + 1;     // If the position returned by j(N-1,M) is considered , then it will consider the 
-
-                                                position return by k %n as position 1. so instead of the solution  j(N-1,M)% N we are considering (j(N - 1, M) + M-1) % N + 1
-
-                                                ie; the value of N and M are altered.
+	
+	return (j(N - 1, M) + M-1) % N + 1;
 
 }
 
 
 public static void main(String[] args)
+
 {
 
 int N = 41;
 
 int M = 3;
 
-System.out.println("Josephus will stand at " + j(N, M));
+System.out.println("The chosen place is " + j(N, M));
 
 }
-}
 
+}
 
