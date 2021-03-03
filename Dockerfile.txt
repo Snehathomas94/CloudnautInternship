@@ -1,5 +1,9 @@
+
 FROM openjdk:15
 COPY . /src/java
 WORKDIR /src/java
 RUN ["javac", "LRUCache.java]
 ENTRYPOINT ["java", "LRUCache"]
+
+
+## I have tried to create a docker image for the application but as I am working on Windows 10 home version, i was unable to install the docker application and do the further things.
